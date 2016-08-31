@@ -26,7 +26,7 @@ Finished in 1 minute 25.42 seconds (files took 0.35542 seconds to load)
 
 ## Installation
 gem install rackspace_lb_cli*.gem
-(Not available on rubygems.org yet).
+or fetch it from rubygems gem install rackspace_lb_cli
 
 ## Usage
 The gems ship an executable, if your $PATH is set up correctly you can run from the shell:
@@ -38,23 +38,25 @@ This will show the help. You will need to inject yout rackspace credentials. Thi
     rackspace_lb_cli --name my-loadbalancer --port 443 --protocol HTTPS --backends someserver:8443,someotherserver:443,someveryotherserver
 
 ## Help Output
-> Usage: rackspace_lb_cli [options]
-> 
-> Common options for all actions
->     -k, --rs-apikey rs_apikey        Rackspace Api Key [RS_API_KEY]
->     -u, --rs-username rs_username    Rackspace username [RS_USERNAME]
->     -r, --rs-region rs_region        Rackspace region, defaults to LON [RS_REGION]
->     -h, --help                       Show this message
->     -v, --version                    Show version
-> Options for the various actions
->     -a, --action action              [create|destroy|add|remove|list|describe]
->                                      create loadbalancer,destroy loadbalancer, add backends, remove backends
->                                      list list all loadbalancers, desc describe a specific loadbalancer
->     -n, --name lb_name               A Name for the loadbalancer
->     -p, --port port                  The numeric port number, the loadbalancer should listen to
->     -o, --protocol proto             The protocol. HTTPS is default
->     -b, --backends x,y,z             Comma-separated list of backends. Can be in the form backend:port
->     -d, --debug                      Send debug output to stderr. For developers.
+```
+Usage: rackspace_lb_cli [options]
+
+Common options for all actions
+    -k, --rs-apikey rs_apikey        Rackspace Api Key [RS_API_KEY]
+    -u, --rs-username rs_username    Rackspace username [RS_USERNAME]
+    -r, --rs-region rs_region        Rackspace region, defaults to LON [RS_REGION]
+    -h, --help                       Show this message
+    -v, --version                    Show version
+Options for the various actions
+    -a, --action action              [create|destroy|add|remove|list|describe]
+                                     create loadbalancer,destroy loadbalancer, add backends, remove backends
+                                     list list all loadbalancers, desc describe a specific loadbalancer
+    -n, --name lb_name               A Name for the loadbalancer
+    -p, --port port                  The numeric port number, the loadbalancer should listen to
+    -o, --protocol proto             The protocol. HTTPS is default
+    -b, --backends x,y,z             Comma-separated list of backends. Can be in the form backend:port
+    -d, --debug                      Send debug output to stderr. For developers.
+```
     
 ## Bugs?
 Probably. Please open a issue in the github project.
