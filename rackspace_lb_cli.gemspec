@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = 'rackspace_lb_cli'
-  spec.version       = '0.2.2'
+  spec.version       = '0.2.3'
   spec.authors       = ['Andreas John']
   spec.email         = ['himself@derjohn.de']
   spec.summary       = %q{ This is a cli tool for the management of loadbalancers in the Rackspace public cloud. }
